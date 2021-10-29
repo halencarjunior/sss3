@@ -35,6 +35,8 @@ $ amass enum -d example.com -o domains-example-com.txt
 $ ./sss3.sh domains-example-com.txt -o output-example-com.txt
 ```
 
+[![asciicast](https://asciinema.org/a/uDBv5uQ60Mtlc868lsfWZAJ5O.svg)](https://asciinema.org/a/uDBv5uQ60Mtlc868lsfWZAJ5O)
+
 ## Development
 
 Want to contribute? Great! Please send your PR for us and we'll be greateful for your help.
