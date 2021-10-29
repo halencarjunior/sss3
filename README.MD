@@ -1,6 +1,5 @@
 # SSS3
 ## _Simple Storage Scanner_
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 SSS3 is a simple S3 Bucket testing software. It uses aws cli find for public buckets in a list of domains/subdomains. 
