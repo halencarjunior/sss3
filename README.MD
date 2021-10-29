@@ -5,7 +5,7 @@
 
 SSS3 is a simple S3 Bucket testing software. It uses aws cli find for public buckets in a list of domains/subdomains. 
 
-- It requires aws cli installer and configured with a s3 policy defined
+- It requires aws cli installed and configured with a s3 policy defined
 - You should have a list of previous enumerated domains/subdomains
 
 ## Features
