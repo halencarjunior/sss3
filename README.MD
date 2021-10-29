@@ -32,7 +32,7 @@ You could start enumerating a domain using [Amass](https://github.com/OWASP/Amas
 
 ```sh
 $ amass enum -d example.com -o domains-example-com.txt
-./sss3.sh domains-example-com.txt -o output-example-com.txt
+$ ./sss3.sh domains-example-com.txt -o output-example-com.txt
 ```
 
 ## Development
