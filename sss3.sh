@@ -14,10 +14,11 @@ Version $VERSION
 by: bt0 - www.github.com/halencarjunior
 =================================================="
 # Testing for requirements
-if [[ ! $(which aws) ]]; then
+if [[ $(which aws) ]]; then
     echo "[+] aws cli found."
 else
     echo "[-] aws cli not found. Please install it using:\nhttps://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html"
+    exit 0
 fi
 
 if [[ -z $1 ]];
