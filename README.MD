@@ -2,7 +2,9 @@
 ## _Simple Storage Scanner_
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-SSS3 is a simple S3 Bucket testing software. It uses aws cli find for public buckets in a list of domains/subdomains. 
+SSS3 is a simple S3 Bucket testing software. It uses aws cli to search for public buckets in a list of domains/subdomains. 
+
+## Basic Requirements
 
 - It requires aws cli installed and configured with a s3 policy defined
 - You should have a list of previous enumerated domains/subdomains
@@ -36,4 +38,5 @@ $ amass enum -d example.com -o domains-example-com.txt
 ## Development
 
 Want to contribute? Great! Please send your PR for us and we'll be greateful for your help.
+
 **Free Software, Hell Yeah!**
