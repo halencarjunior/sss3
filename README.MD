@@ -42,8 +42,11 @@ Want to contribute? Great! Please send your PR for us and we'll be greateful for
 ## References
 
 I am grateful for some articles that motivates me to creat that tool
+
 [Sidechannel Article by Rodrigo Montoro](https://sidechannel.blog/enumerando-servicos-em-contas-aws-amazon-web-services-de-forma-anonima-e-nao-autenticada/index.html)
+
 [Rhynosec Article for Pentesting S3](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
 
+Thanks for using and help to share please
 
 **Free Software, Hell Yeah!**
