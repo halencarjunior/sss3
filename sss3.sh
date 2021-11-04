@@ -42,7 +42,7 @@ while read line; do
 
 	RESULT=$((aws s3 ls s3://$line/ --region $region) 2>&1)
 	if [[ "$RESULT" == *"Unable to locate credentials"* ]]; then
-		echo -e "$RED   [!] No credentials configured. You must run 'aws configure'"
+		echo -e "$RED   [!] No credentials configured. You must run 'aws configure' .$RESET"
 		exit 0
 	elif [[ "$RESULT" == *"NoSuchBucket"* ]]; then
 		echo -e "$RED	[-] No Such Bucket$RESET"
