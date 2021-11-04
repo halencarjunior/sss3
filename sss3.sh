@@ -14,11 +14,10 @@ Version $VERSION
 by: bt0 - www.github.com/halencarjunior
 =================================================="
 # Testing for requirements
-if [[ $(which aws) ]]; then
+if [[ ! $(which aws) ]]; then
     echo "[+] aws cli found."
 else
     echo "[-] aws cli not found. Please install it using:\nhttps://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html"
-    exit 0
 fi
 
 if [[ -z $1 ]];
@@ -42,8 +41,10 @@ while read line; do
 	echo -e "$YELLOW Listing bucket $line on region $region $RESET"
 
 	RESULT=$((aws s3 ls s3://$line/ --region $region) 2>&1)
-	
-	if [[ "$RESULT" == *"NoSuchBucket"* ]]; then
+	if [[ "$RESULT" == *"Unable to locate credentials"* ]]; then
+		echo -e "$RED   [!] No credentials configured. You must run 'aws configure'"
+		exit 0
+	elif [[ "$RESULT" == *"NoSuchBucket"* ]]; then
 		echo -e "$RED	[-] No Such Bucket$RESET"
 	elif [[ "$RESULT" == *"InvalidAccessKeyId"* ]]; then
 		echo -e "$RED	[-] Invalid Access Key Id found. $RESET"
